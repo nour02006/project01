@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pocket DZ - Crypto Wallet</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Outfit:wght@100..900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+
+    <div class="logo">
+      <span class="logo-icon">₿</span>
+      <span class="logo-name">Pocket<span class="gold">DZ</span></span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#waitlist">Get Access</a></li>
+    </ul>
+
+    <button class="btn-gold">Launch App</button>
+
+  </nav>
+
+
+ 
+  <section class="hero">
+
+    <div class="hero-text">
+
+      <p class="badge">🇩🇿 Algeria's First Crypto Wallet</p>
+
+      <h1>The Smartest Way to Hold <span class="gold">Crypto.</span></h1>
+
+      <p class="subtitle">
+        Pocket DZ lets you send, receive, and grow your crypto assets securely.
+        Built for Algerians, trusted worldwide.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#waitlist" class="btn-gold">Get Early Access</a>
+        <a href="#features" class="btn-outline">See How It Works</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-number" id="userCount">0</span>
+          <span class="stat-label">Users Joined</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">$3.1B+</span>
+          <span class="stat-label">Assets Secured</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">150+</span>
+          <span class="stat-label">Cryptocurrencies</span>
+        </div>
+      </div>
+
+    </div>
+
+    
+    </div>
+
+  </section>
+
+
+ 
+  <section class="features" id="features">
+
+    <p class="section-label">Why Pocket DZ</p>
+    <h2>Everything You Need. <span class="gold">Nothing You Don't.</span></h2>
+
+    <div class="features-grid">
+
+      <div class="feature-card">
+        <p class="feat-icon">🔐</p>
+        <h3>Bank-Level Security</h3>
+        <p>Your private keys stay on your device. 256-bit encryption with biometric support.</p>
+      </div>
+
+      <div class="feature-card">
+        <p class="feat-icon">⚡</p>
+        <h3>Instant Transactions</h3>
+        <p>Send crypto anywhere in under 2 seconds. Real-time prices updated every 500ms.</p>
+      </div>
+
+      <div class="feature-card">
+        <p class="feat-icon">🌍</p>
+        <h3>Multi-Chain Support</h3>
+        <p>BTC, ETH, SOL, BNB and 150+ tokens all in one wallet.</p>
+      </div>
+
+      <div class="feature-card">
+        <p class="feat-icon">📊</p>
+        <h3>Portfolio Analytics</h3>
+        <p>Beautiful charts to track your crypto performance over time.</p>
+      </div>
+
+      <div class="feature-card">
+        <p class="feat-icon">💱</p>
+        <h3>Zero-Fee Swaps</h3>
+        <p>Swap between 150+ tokens at the best rates with no hidden fees.</p>
+      </div>
+
+      <div class="feature-card">
+        <p class="feat-icon">🇩🇿</p>
+        <h3>DZD Pricing</h3>
+        <p>See your balance in Algerian Dinar. First wallet to support DZD natively.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="pricing" id="pricing">
+
+    <p class="section-label">Plans</p>
+    <h2>Simple <span class="gold">Pricing</span></h2>
+
+    <div class="toggle-row">
+      <span id="label-monthly" class="toggle-label active">Monthly</span>
+      <div class="toggle-box" id="toggleBox">
+        <div class="toggle-circle"></div>
+      </div>
+      <span id="label-yearly" class="toggle-label">Yearly <span class="save">Save 20%</span></span>
+    </div>
+
+    <div class="pricing-grid">
+
+      <div class="price-card">
+        <h3>Free</h3>
+        <p class="price-amount">$0<span class="price-period">/mo</span></p>
+        <ul>
+          <li>✓ Up to 3 wallets</li>
+          <li>✓ 50+ cryptocurrencies</li>
+          <li>✓ Basic analytics</li>
+          <li>✓ Community support</li>
+          <li class="disabled">✗ DZD pricing</li>
+          <li class="disabled">✗ Priority support</li>
+        </ul>
+        <button class="btn-outline w100">Get Started</button>
+      </div>
+
+      <div class="price-card popular-card">
+        <p class="popular-tag">Most Popular</p>
+        <h3>Pro</h3>
+        <p class="price-amount"><span id="proPrice">$9</span><span class="price-period">/mo</span></p>
+        <ul>
+          <li>✓ Unlimited wallets</li>
+          <li>✓ 150+ cryptocurrencies</li>
+          <li>✓ Advanced analytics</li>
+          <li>✓ DZD pricing</li>
+          <li>✓ Priority support</li>
+          <li class="disabled">✗ API access</li>
+        </ul>
+        <button class="btn-gold w100">Start Pro</button>
+      </div>
+
+      <div class="price-card">
+        <h3>Business</h3>
+        <p class="price-amount"><span id="bizPrice">$29</span><span class="price-period">/mo</span></p>
+        <ul>
+          <li>✓ Everything in Pro</li>
+          <li>✓ API access</li>
+          <li>✓ Team management</li>
+          <li>✓ Custom integrations</li>
+          <li>✓ Dedicated support</li>
+          <li>✓ SLA guarantee</li>
+        </ul>
+        <button class="btn-outline w100">Contact Sales</button>
+      </div>
+
+    </div>
+
+  </section>
+
+
+ 
+  <section class="waitlist" id="waitlist">
+
+    <p class="section-label">Early Access</p>
+    <h2>Join the <span class="gold">Waitlist</span></h2>
+    <p class="subtitle">Be the first to use Pocket DZ. Limited spots available.</p>
+
+    <form id="waitlistForm">
+      <div class="form-row">
+        <input type="text" id="nameInput" placeholder="Your name" />
+        <input type="email" id="emailInput" placeholder="Your email" />
+      </div>
+      <p class="error-msg" id="errorMsg"></p>
+      <button type="submit" class="btn-gold w100">Join Waitlist 🚀</button>
+    </form>
+
+    <div class="members-box">
+      <div class="members-top">
+        <span>🔥 Recently joined</span>
+        <span id="totalCount">0 members</span>
+      </div>
+      <div id="membersList"></div>
+    </div>
+
+  </section>
+
+
+    <span class="logo-name">Pocket<span class="gold">DZ</span></span>
+    <p>© 2025 Pocket DZ. Built with 🇩🇿 in Algeria.</p>
+  </footer>
+
+
+  <script src="style.js"></script>
+</body>
+</html>
